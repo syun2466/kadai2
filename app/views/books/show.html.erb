@@ -1,0 +1,17 @@
+
+
+<div class="syousai_box">
+ <div class="syosai">
+ 　  <% if flash[:notice] %>
+   　<div class="b" role="alert">
+     <%= notice %>
+   　</div>
+  　<% end %>
+ </div>
+ <p class="syosai"><strong>Title:</strong> <%=@book.title %> </p>
+ <p class="syosai"><strong>Body:</strong> <%=@book.body %></p>
+ 
+  <%= link_to "Edit", edit_book_path(@book.id) %>
+   |
+  <%= link_to "Back", '/books' %>
+</div>
